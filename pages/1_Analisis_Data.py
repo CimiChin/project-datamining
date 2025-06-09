@@ -33,9 +33,9 @@ if df is not None:
     with col1:
         st.subheader("Distribusi Kuantitas Penjualan")
         # Add these lines before the px.histogram call
-print(df.info())
-print(df['SalesQuantity'].head())
-print(df['SalesQuantity'].describe())
+        print(df.info())
+        print(df['SalesQuantity'].head())
+        print(df['SalesQuantity'].describe())
         fig_hist = px.histogram(df, x='SalesQuantity', nbins=50, title="Histogram Kuantitas Penjualan")
         st.plotly_chart(fig_hist, use_container_width=True)
 
